@@ -49,7 +49,7 @@ def request(urli):
     url_print = url2[0].getText()
     url_print = url_print
     print(url_print)
-    return bot.send_message('-688661978', url_print)
+    return bot.send_message('-1001493083288', url_print)
   
 
   #-688661978
@@ -66,7 +66,7 @@ def read_file(filename):
         return fp.read()
 
 if __name__ == "__main__":
-    schedule.every().day.at("08:40").do(function_to_run)
+    schedule.every().day.at("09:00").do(function_to_run)
     Thread(target=schedule_checker).start() 
     # Port is given by Heroku
     PORT = os.environ.get('PORT')
