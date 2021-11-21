@@ -66,7 +66,7 @@ def read_file(filename):
         return fp.read()
 
 if __name__ == "__main__":
-    schedule.every().day.at("11:25").do(function_to_run)
+    schedule.every().day.at("09:00").do(function_to_run)
     Thread(target=schedule_checker).start() 
     # Port is given by Heroku
     PORT = os.environ.get('PORT')
